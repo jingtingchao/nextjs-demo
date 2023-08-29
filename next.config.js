@@ -1,6 +1,4 @@
-/** @type {import('next').NextConfig} */
-
-const path = require("path")
+const path = require("path");
 
 
 module.exports = {
@@ -9,10 +7,8 @@ module.exports = {
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@": path.resolve(__dirname)
-    }
-
-    return config
-    
+      "@": path.resolve(__dirname),
+    };
+    return config;
   }
 }

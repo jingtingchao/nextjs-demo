@@ -5,10 +5,11 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -17,10 +18,8 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "plugins": [{
-      "name": "typescript-plugin-css-modules"
-    }]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "images.d.ts"],
   "exclude": ["node_modules"]
 }
