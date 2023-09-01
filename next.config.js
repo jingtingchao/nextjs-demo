@@ -1,6 +1,5 @@
 const path = require("path");
 
-
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
@@ -10,5 +9,8 @@ module.exports = {
       "@": path.resolve(__dirname),
     };
     return config;
-  }
-}
+  },
+  images: {
+    domains: ["127.0.0.1"],
+  },
+};
