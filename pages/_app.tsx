@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps, AppContext } from "next/app";
 import App from "next/app";
 import { Layout, ILayoutProps } from "@/components/layout";
-import code from "@/public/close.png";
+import code from "@/public/code.png";
 import Head from "next/head";
 
 const MyApp = (data: AppProps & ILayoutProps) => {
