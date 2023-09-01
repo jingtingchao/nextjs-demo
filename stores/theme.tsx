@@ -19,6 +19,7 @@ export const ThemeContextProvider = ({ children }: IProps): JSX.Element => {
   const [theme, setTheme] = useState<Themes>(Themes.light);
   // 组件创建的时候监听存储的改变
   //return 监听组件的销毁，然后移除对应的监听removeEventListener
+  debugger;
   useEffect(() => {
     const checkTheme = (): void => {
       const item = (localStorage.getItem("theme") as Themes) || Themes.light;
